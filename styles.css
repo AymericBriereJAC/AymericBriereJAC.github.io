@@ -1,0 +1,150 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 45px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.logo {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav {
+    flex-grow: 2;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.container,
+.flex-item-left {
+    flex-basis: 40%;
+    margin-bottom: 20px;
+}
+
+.flex-item-middle {
+    flex-basis: 25%;
+    margin-bottom: 20px;
+}
+
+.flex-item-right {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+}
+
+.picture-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 10px 10px 0;
+}
+
+#head {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 0 0 10px 10px;
+    max-width: 100%;
+}
+
+
+.skills {
+    display: grid;
+    grid-template-areas:
+        'heading heading'
+        'list1 list2';
+    gap: 20px; /* Adjust the gap between items as needed */
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.column:nth-child(1) {
+    grid-area: list1;
+}
+
+.column:nth-child(2) {
+    grid-area: list2;
+}
+
+#skillsH2 {
+    grid-area: heading;
+}
+
+.list {
+    margin: 20px;
+    font-size: 1.05em;
+}
+
+.about-me {
+    font-size: 1.1em;
+}
