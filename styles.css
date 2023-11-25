@@ -268,5 +268,52 @@ footer {
     text-decoration: underline;
 }
 
+#contact {
+    text-align: left;
+    margin-top: 40px;
+    max-width: 50%; /* Set the max-width to 50% of the parent container */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    flex-basis: 30%; /* Adjust the width of the contact items */
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-item img {
+    width: 80px; /* Adjust the size of the icons as needed */
+    height: 80px;
+    border-radius: 50%; /* Make the images circular */
+    object-fit: cover;
+}
+
+.contact-item p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Add hover effect to links */
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #2980b9; /* Adjust the hover color as needed */
+}
+
 
 
